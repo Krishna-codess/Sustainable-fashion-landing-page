@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Sumiso Branding</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div id="navigation">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h1>Your Cart</h1>
+        <div class="cart-container">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="sumisomodel.png" alt="Product 1">
+                    <div class="cart-item-details">
+                        <h3>Brand-logo Hoodie</h3>
+                        <p>Price: ₹5000</p>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+                <div class="cart-item">
+                    <img src="Sumisobag2.png" alt="Product 2">
+                    <div class="cart-item-details">
+                        <h3>Tote Bag</h3>
+                        <p>Price: ₹2000</p>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <p>Subtotal: ₹7000</p>
+                <p>Taxes : ₹1260</p>
+                <p><strong>Total : ₹8260</strong></p>
+                <button class="checkout-btn"onclick="window.open('account.html','_blank')" style="cursor: pointer;">Proceed to Checkout</button>
+            </div>
+        </div>
+        <section id="cart" class="cart-section">
+            <h1>Saved for later</h1>
+            <div class="cart-container">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="sumisomodel.png" alt="Product 1">
+                        <div class="cart-item-details">
+                            <h3>Brand-logo Hoodie</h3>
+                            <p>Price: ₹5000
+                                size: s
+                            </p>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-item">Remove</button>
+                    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 White Pencil Studio</p>
+    </footer>
+</body>
+</html>

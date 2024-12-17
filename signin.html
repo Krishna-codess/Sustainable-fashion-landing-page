@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Sumiso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #999,#000); ;
+        }
+
+        .signin-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .signin-form h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .signin-form p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .signin-form input[type="email"],
+        .signin-form input[type="password"] {
+            width: calc(100% - 1rem);
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .signin-form input[type="email"]:focus,
+        .signin-form input[type="password"]:focus {
+            border-color: #555;
+        }
+
+        .signin-form button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #666;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .signin-form button:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
+        .signin-form button:active {
+            transform: translateY(0);
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-login img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="signin-form">
+    <h2>Sign In</h2>
+    <p>Welcome to Sumiso! Please sign in to your account.</p>
+    <form action="INDEX.html" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Your Password" required>
+        <button type="submit" onclick="window.open('INDEX.html','_blank')" style="cursor: pointer;">Sign In</button>
+    
+    
+    </form>
+    <div class="social-login">
+        <img src="https://th.bing.com/th/id/OIP.LeNoUCwUB39sBwYmzF9RowAAAA?rs=1&pid=ImgDetMain" alt="Sign in with Google">
+        <img src="https://th.bing.com/th/id/OIP.Gi4_0FHJWTnbhktC2kMuEgAAAA?rs=1&pid=ImgDetMain" alt="Sign in with Apple">
+        <img src="https://freelogopng.com/images/all_img/1657548084facebook-logo-png.png" alt="Sign in with Facebook">
+    </div>
+</div>
+
+</body>
+</html>
